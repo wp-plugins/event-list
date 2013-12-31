@@ -87,6 +87,7 @@ Another possibility would be to call the wordpress function "do_shortcode()".
 * some help text updates
 
 Attention:
+
 In this version some of the shortcode attributes and the behavior of some existing attributes have changed and are not compatible with the old version! Please check all your shortcodes after the update.
 Additionally the url parameter has changed. So if you are using existing links to an eventlist with parameters you have to update them.
 Also existing widgets must be updated after plugin upgrade. Please visit the widget admin page and press save for all evenlist wigets.

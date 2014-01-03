@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: event, events, list, listview, calendar, schedule, shortcode, page, category, categories, filter, admin, attribute, widget, sidebar, feed, rss
 Requires at least: 3.3
 Tested up to: 3.8
-Stable tag: 0.6.0
+Stable tag: 0.6.1
 Plugin URI: http://wordpress.org/extend/plugins/event-list
 Licence: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -71,6 +71,13 @@ Another possibility would be to call the wordpress function "do_shortcode()".
 
 == Changelog ==
 
+= 0.6.1 (2013-02-03) =
+* fixed redirect issue in admin event table
+* fixed a bug in filterbar javascript
+* fixed a problem with wrong format of deatails in admin event table
+* changed button text for event update from "Publish" to "Update"
+* show required manual widget update message on the frontpage only to users with required privileges
+
 = 0.6.0 (2013-12-31) =
 * added adjustment options for the filterbar (shortcode attribute "filterbar_items")
 * added "All" and "Past" options to years filter in filterbar
@@ -87,7 +94,6 @@ Another possibility would be to call the wordpress function "do_shortcode()".
 * some help text updates
 
 Attention:
-
 In this version some of the shortcode attributes and the behavior of some existing attributes have changed and are not compatible with the old version! Please check all your shortcodes after the update.
 Additionally the url parameter has changed. So if you are using existing links to an eventlist with parameters you have to update them.
 Also existing widgets must be updated after plugin upgrade. Please visit the widget admin page and press save for all evenlist wigets.

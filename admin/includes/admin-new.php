@@ -99,6 +99,9 @@ class EL_Admin_New {
 						<td><input type="text" class="text datepicker form-required" name="start_date" id="start_date" value="'.date('Y-m-d', $start_date).'" />
 							<span id="end_date_area"> - <input type="text" class="text datepicker" name="end_date" id="end_date" value="'.date('Y-m-d', $end_date).'" /></span>
 							<label><input type="checkbox" name="multiday" id="multiday" value="1" /> Multi-Day Event</label>
+							TestText: <input type="text" name="test_text" id="test_text" value ="" />
+							TestDate1: <input type="text" name="test_date1" id="test_date1" value ="" />
+							TestDate2: <input type="text" name="test_date2" id="test_date2" value ="" />
 							<input type="hidden" id="sql_start_date" name="sql_start_date" value="" />
 							<input type="hidden" id="sql_end_date" name="sql_end_date" value="" />
 						</td>

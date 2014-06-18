@@ -30,9 +30,6 @@ jQuery(document).ready(function($) {
 		onClose: function(selectedDate) {
 			// set minDate for end_date picker
 			minDate = $.datepicker.parseDate( conf.el_date_format, selectedDate );
-			$("#test_text").val("Test");
-			$("#test_date1").val(minDate);
-			$("#test_date2").val($.datepicker.formatDate("yy-mm-dd", minDate));
 			minDate.setDate(minDate.getDate()+1);
 			$("#end_date").datepicker("option", "minDate", minDate);
 		}

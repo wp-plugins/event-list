@@ -29,13 +29,6 @@ class EL_Admin_Main {
 		$this->filterbar = &EL_Filterbar::get_instance();
 		$this->event_table = new EL_Event_Table();
 		$this->action = $this->event_table->current_action();
-		error_log("Action: ".$this->action);
-		foreach($_GET as $key => $value) {
-			error_log('GET value "'.$key.'": '.$value);
-		}
-		foreach($_POST as $key => $value) {
-			error_log('POST value "'.$key.'": '.$value);
-		}
 		// check for real actions
 		if($this->action) {
 			switch($this->action) {
